@@ -1,0 +1,126 @@
+S<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub and CICD Lab 2</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>GitHub and CICD Lab 2</h1>
+
+<a href="index.html">Home</a>
+
+<h2>Introduction</h2>
+
+<p>
+This lab focused on GitHub Actions and YAML workflows.
+The aim of the lab was to automate deployment using CI/CD pipelines.
+</p>
+
+<h2>Creating A New Repository</h2>
+
+<p>
+I created a new GitHub Classroom repository and copied my previous assignment files into the new repository.
+</p>
+
+<img src="Pictures/repo-cloned.png">
+
+<h2>Copying Assignment Files</h2>
+
+<p>
+I copied my previous website files including HTML pages, CSS files and screenshots into the new repository.
+</p>
+
+<img src="Pictures/files-copied.png">
+
+<h2>Creating The Workflow Folder</h2>
+
+<p>
+I created a .github/workflows folder and added a deployment.yml workflow file.
+</p>
+
+<img src="Pictures/workflow-folder.png">
+
+<h2>Writing YAML Code</h2>
+
+<p>
+I added YAML instructions to automate deployment using GitHub Actions.
+</p>
+
+<img src="Pictures/yaml-code.png">
+
+<pre>
+name: Deploy Website
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  projectdeploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Upload Artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy To GitHub Pages
+        uses: actions/deploy-pages@v4
+</pre>
+
+<h2>GitHub Pages Configuration</h2>
+
+<p>
+I changed the GitHub Pages source to GitHub Actions deployment.
+</p>
+
+<img src="Pictures/github-pages-actions.png">
+
+<h2>Git Push Command</h2>
+
+<p>
+I committed and pushed all files to GitHub using Git commands.
+</p>
+
+<img src="Pictures/git-push-cicd2.png">
+
+<h2>GitHub Actions Deployment</h2>
+
+<p>
+GitHub Actions automatically deployed the website after pushing changes.
+</p>
+
+<img src="Pictures/actions-success.png">
+
+<h2>Website Deployment</h2>
+
+<p>
+The website was successfully deployed online using GitHub Pages.
+</p>
+
+<img src="Pictures/website-deployed.png">
+
+<h2>Reflection</h2>
+
+<p>
+In this lab I learned how GitHub Actions and YAML workflows can automate deployment tasks.
+This demonstrated how CI/CD pipelines are used in software development projects.
+</p>
+
+</body>
+</html>
