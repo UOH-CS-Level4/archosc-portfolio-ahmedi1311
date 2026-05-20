@@ -1,4 +1,4 @@
-S<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,117 +10,103 @@ S<!DOCTYPE html>
 
 <body>
 
-<h1>GitHub and CICD Lab 2</h1>
+<header>
+    <h1>GitHub and CICD Lab 2</h1>
+</header>
 
-<a href="index.html">Home</a>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="GitHubAndCICD1.html">CICD Lab 1</a>
+</nav>
 
-<h2>Introduction</h2>
+<main>
 
-<p>
-This lab focused on GitHub Actions and YAML workflows.
-The aim of the lab was to automate deployment using CI/CD pipelines.
-</p>
+<section>
+    <h2>Introduction</h2>
 
-<h2>Creating A New Repository</h2>
+    <p>
+        This lab focused on GitHub Actions and YAML workflows.
+        The aim of the lab was to automate deployment using CI/CD pipelines.
+    </p>
+</section>
 
-<p>
-I created a new GitHub Classroom repository and copied my previous assignment files into the new repository.
-</p>
+<section>
+    <h2>Creating A New Repository</h2>
 
-<img src="Pictures/repo-cloned.png">
+    <p>
+        I created a new GitHub Classroom repository and copied my previous assignment files into the new repository.
+    </p>
 
-<h2>Copying Assignment Files</h2>
+    <img src="Pictures/repo-cloned.png">
+</section>
 
-<p>
-I copied my previous website files including HTML pages, CSS files and screenshots into the new repository.
-</p>
+<section>
+    <h2>Copying Assignment Files</h2>
 
-<img src="Pictures/files-copied.png">
+    <p>
+        I copied my previous website files including HTML pages, CSS files and screenshots into the new repository.
+    </p>
 
-<h2>Creating The Workflow Folder</h2>
+    <img src="Pictures/files-copied.png">
+</section>
 
-<p>
-I created a .github/workflows folder and added a deployment.yml workflow file.
-</p>
 
-<img src="Pictures/workflow-folder.png">
+<section>
+    <h2>Writing YAML Code</h2>
 
-<h2>Writing YAML Code</h2>
+    <p>
+        I added YAML instructions to automate deployment using GitHub Actions.
+    </p>
 
-<p>
-I added YAML instructions to automate deployment using GitHub Actions.
-</p>
+    <img src="Pictures/yaml-code.png">
 
-<img src="Pictures/yaml-code.png">
 
-<pre>
-name: Deploy Website
+</section>
 
-on:
-  push:
-    branches:
-      - main
+<section>
+    <h2>GitHub Pages Configuration</h2>
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+    <p>
+        I changed the GitHub Pages source to GitHub Actions deployment.
+    </p>
 
-jobs:
-  projectdeploy:
-    runs-on: ubuntu-latest
+    <img src="Pictures/github-pages-actions.png">
+</section>
 
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+<section>
+    <h2>Git Push Command</h2>
 
-      - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
+    <p>
+        I committed and pushed all files to GitHub using Git commands.
+    </p>
 
-      - name: Deploy To GitHub Pages
-        uses: actions/deploy-pages@v4
-</pre>
+    <img src="Pictures/Finished CICD2.png">
+</section>
 
-<h2>GitHub Pages Configuration</h2>
+<section>
+    <h2>GitHub Actions Deployment</h2>
 
-<p>
-I changed the GitHub Pages source to GitHub Actions deployment.
-</p>
+    <p>
+        GitHub Actions automatically deployed the website after pushing changes.
+    </p>
 
-<img src="Pictures/github-pages-actions.png">
+    <img src="Pictures/github-pages-actions.png">
+</section>
 
-<h2>Git Push Command</h2>
 
-<p>
-I committed and pushed all files to GitHub using Git commands.
-</p>
+<section>
+    <h2>Reflection</h2>
 
-<img src="Pictures/git-push-cicd2.png">
+    <p>
+       This lab helped me develop a better understanding of GitHub, YAML, CI/CD pipelines, and GitHub Actions. I learned how developers automate deployment processes and how GitHub Actions can save time by automatically deploying websites whenever changes are made. I also improved my understanding of Git commands, repository management, and troubleshooting deployment problems.
+    </p>
+</section>
 
-<h2>GitHub Actions Deployment</h2>
+</main>
 
-<p>
-GitHub Actions automatically deployed the website after pushing changes.
-</p>
-
-<img src="Pictures/actions-success.png">
-
-<h2>Website Deployment</h2>
-
-<p>
-The website was successfully deployed online using GitHub Pages.
-</p>
-
-<img src="Pictures/website-deployed.png">
-
-<h2>Reflection</h2>
-
-<p>
-In this lab I learned how GitHub Actions and YAML workflows can automate deployment tasks.
-This demonstrated how CI/CD pipelines are used in software development projects.
-</p>
+<footer>
+    <p>Ahmed Hussien Portfolio</p>
+</footer>
 
 </body>
 </html>
