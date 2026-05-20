@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessing And Using A Virtual Machine</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a href="GitHubAndCICD1.html">CICD 1</a>
+    <a href="GitHubAndCICD2.html">CICD 2</a>
+</nav>
+
+<button id="darkModeBtn">Dark Mode</button>
+
+<header>
+    <h1>Accessing And Using A Virtual Machine</h1>
+</header>
+
+<main>
+
+<section>
+    <h2>Introduction</h2>
+
+    <p>
+        In this lab I explored how virtual machines can be used for remote access and website hosting. 
+        The main aim of the lab was to understand how a remote server environment works and how websites can be deployed inside a virtual machine.
+    </p>
+
+    <p>
+        During the lab I learned about Remote Desktop Connection, PowerShell commands, Git installation and IIS web hosting services. 
+        I also explored how repositories can be cloned into a virtual environment and hosted through a web server.
+    </p>
+</section>
+
+<section>
+    <h2>Connecting To The Virtual Machine</h2>
+
+    <p>
+        The first part of the lab involved connecting to a university virtual machine using Remote Desktop Connection. 
+        This allowed access to a Windows Server environment through a remote connection.
+    </p>
+
+    <p>
+        The process involved entering the virtual machine hostname and authenticating using university login credentials. 
+        Once connected, the virtual machine desktop could be accessed and controlled remotely.
+    </p>
+
+    <p>
+        Through this process I gained a better understanding of remote access systems and how virtual machines are commonly used in development and hosting environments.
+    </p>
+</section>
+
+<section>
+    <h2>Using PowerShell And Git</h2>
+
+    <p>
+        PowerShell was used to run commands and manage files inside the virtual machine environment. 
+        Different commands were used to check software installations and manage repositories.
+    </p>
+
+    <p>
+        Git was used to clone and manage the portfolio repository inside the virtual machine. 
+        This allowed the website files to be copied directly from GitHub into the server environment.
+    </p>
+
+<pre>
+git version
+git clone repository-link
+</pre>
+
+    <p>
+        Using Git inside the virtual machine improved my understanding of remote development workflows and repository management.
+    </p>
+</section>
+
+<section>
+    <h2>Hosting The Website Using IIS</h2>
+
+    <p>
+        IIS (Internet Information Services) was used to host the portfolio website inside the virtual machine. 
+        IIS is a web server platform provided by Microsoft for hosting websites and applications.
+    </p>
+
+    <p>
+        The website files were copied into the wwwroot directory so that IIS could detect and host the portfolio automatically.
+    </p>
+
+    <p>
+        PowerShell commands were also used to check whether the IIS service was active and functioning correctly.
+    </p>
+
+<pre>
+Get-Service w3svc
+</pre>
+
+    <p>
+        This section of the lab helped me understand how websites can be hosted on remote servers and how web server software operates in a virtual machine environment.
+    </p>
+</section>
+
+<section>
+    <h2>Reflection</h2>
+
+    <p>
+        This lab improved my understanding of virtual machines, remote access and server hosting environments. 
+        I learned how repositories can be deployed remotely and how server software such as IIS can be used to host websites.
+    </p>
+
+    <p>
+        I also developed a better understanding of remote workflows, PowerShell usage and the importance of virtualisation technologies in modern computing systems.
+    </p>
+</section>
+
+</main>
+<footer>
+    <p>Ahmed Hussien Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

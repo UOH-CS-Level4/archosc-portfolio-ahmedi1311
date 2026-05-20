@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Scheduling</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+</nav>
+
+<button id="darkModeBtn">Dark Mode</button>
+
+<header>
+    <h1>OS Scheduling</h1>
+</header>
+
+<main>
+
+<section>
+    <h2>Introduction</h2>
+
+    <p>
+        In this lab I explored different operating system scheduling algorithms and how processes are managed by the CPU. 
+        Scheduling algorithms are important because they control the order in which processes are executed and directly affect system performance, waiting time and turnaround time.
+    </p>
+
+    <p>
+        During this lab I worked with several scheduling algorithms including First Come First Serve (FCFS), Shortest Job First (SJF) and Round Robin scheduling. 
+        I also explored how Gantt charts can be used to visualise process execution.
+    </p>
+</section>
+
+<section>
+    <h2>First Come First Serve (FCFS)</h2>
+
+    <p>
+        FCFS scheduling is one of the simplest scheduling algorithms. 
+        Processes are executed in the exact order that they arrive in the ready queue.
+    </p>
+
+    <p>
+        In this exercise I calculated waiting times and turnaround times for multiple processes. 
+        I also created Gantt charts to represent the execution order of the processes.
+    </p>
+
+    <p>
+        One advantage of FCFS scheduling is that it is simple and easy to implement. 
+        However, it can lead to large waiting times when long processes arrive before short processes.
+    </p>
+
+</section>
+
+<section>
+    <h2>Shortest Job First (SJF)</h2>
+
+    <p>
+        SJF scheduling selects the process with the shortest burst time first. 
+        This algorithm can reduce average waiting time compared to FCFS scheduling.
+    </p>
+
+    <p>
+        During the lab I calculated waiting times, turnaround times and process completion order using SJF scheduling. 
+        I also compared the results with FCFS scheduling to observe the differences in performance.
+    </p>
+
+    <p>
+        SJF scheduling is more efficient than FCFS in many situations, but it can be difficult to predict process burst times accurately.
+    </p>
+</section>
+
+<section>
+    <h2>Round Robin Scheduling</h2>
+
+    <p>
+        Round Robin scheduling uses a time quantum to divide CPU execution time fairly between processes. 
+        Each process receives a fixed amount of CPU time before the next process is executed.
+    </p>
+
+    <p>
+        In this exercise I experimented with different quantum values and observed how process execution changed. 
+        Gantt charts were created to visualise context switching and CPU sharing between processes.
+    </p>
+
+    <p>
+        Round Robin scheduling is commonly used in time-sharing operating systems because it provides fair CPU access for all processes.
+    </p>
+
+</section>
+
+<section>
+    <h2>Scheduling Calculations</h2>
+
+    <p>
+        Throughout the lab I performed calculations for:
+    </p>
+
+    <ul>
+        <li>Waiting Time</li>
+        <li>Turnaround Time</li>
+        <li>Completion Time</li>
+        <li>Average Waiting Time</li>
+        <li>Average Turnaround Time</li>
+    </ul>
+
+    <p>
+        These calculations demonstrated how scheduling algorithms affect CPU efficiency and process performance.
+    </p>
+</section>
+
+<section>
+    <h2>Reflection</h2>
+
+    <p>
+        This lab improved my understanding of CPU scheduling and process management in operating systems. 
+        I learned how different scheduling algorithms can affect system performance and process execution efficiency.
+    </p>
+
+    <p>
+        I also improved my ability to create scheduling tables, perform timing calculations and analyse Gantt charts.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <p>Ahmed Hussien Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Resource Allocation</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+</nav>
+
+<button id="darkModeBtn">Dark Mode</button>
+
+<header>
+    <h1>OS Resource Allocation</h1>
+</header>
+
+<main>
+
+<section>
+    <h2>Introduction</h2>
+
+    <p>
+        In this lab I explored operating system resource allocation and deadlock management techniques.
+    </p>
+
+    <p>
+        Operating systems must manage resources such as memory, files and CPU access between multiple processes safely .
+    </p>
+</section>
+
+<section>
+    <h2>Deadlocks</h2>
+
+    <p>
+        A deadlock occurs when multiple processes wait indefinitely for resources that are being held by each other.
+    </p>
+
+    <p>
+        During the exercises I identified deadlock situations and explored the four conditions required for a deadlock to occur:
+    </p>
+
+    <ul>
+        <li>Mutual Exclusion</li>
+        <li>Hold and Wait</li>
+        <li>No Preemption</li>
+        <li>Circular Wait</li>
+    </ul>
+
+</section>
+
+<section>
+    <h2>Safe And Unsafe States</h2>
+
+    <p>
+        A safe state occurs when the operating system can allocate resources in a way that allows all processes to complete successfully.
+    </p>
+
+    <p>
+        Unsafe states increase the risk of deadlocks because resource allocation may prevent processes from finishing execution.
+    </p>
+
+    <p>
+        During the lab I analysed allocation tables and determined whether systems were in safe or unsafe states.
+    </p>
+
+</section>
+
+<section>
+    <h2>Banker's Algorithm</h2>
+
+    <p>
+        The Banker's Algorithm is used to determine whether a system is in a safe state before allocating resources to processes.
+    </p>
+
+    <p>
+        During this exercise I completed resource allocation tables and calculated available resources, maximum resource requests and safe execution sequences.
+    </p>
+
+    <p>
+        The algorithm helps prevent deadlocks by refusing unsafe resource allocation requests.
+    </p>
+
+</section>
+
+<section>
+    <h2>Resource Allocation Tables</h2>
+
+    <p>
+        Resource allocation tables were used to organise process information and resource usage during the exercises.
+    </p>
+
+    <p>
+        These tables helped visualise:
+    </p>
+
+    <ul>
+        <li>Allocated Resources</li>
+        <li>Available Resources</li>
+        <li>Maximum Resource Requests</li>
+        <li>Remaining Resource Needs</li>
+    </ul>
+
+    <p>
+        Resource allocation tables are useful because they simplify deadlock analysis and safe state calculations.
+    </p>
+</section>
+
+<section>
+    <h2>Reflection</h2>
+
+    <p>
+        This lab improved my understanding of resource management and deadlock prevention in operating systems.
+    </p>
+
+    <p>
+        I also improved my ability to analyse resource allocation tables and determine whether systems are operating safely.
+    </p>
+</section>
+
+</main>
+
+<footer>
+    <p>Ahmed Hussien Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

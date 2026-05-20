@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OS Memory And MMU</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+</nav>
+
+<button id="darkModeBtn">Dark Mode</button>
+
+<header>
+    <h1>OS Memory And MMU</h1>
+</header>
+
+<main>
+
+<section>
+    <h2>Introduction</h2>
+
+    <p>
+        In this lab I explored memory management concepts used by operating systems and how the Memory Management Unit (MMU) translates addresses between virtual memory and physical memory.
+    </p>
+
+    <p>
+        Modern operating systems use memory management techniques to improve efficiency, multitasking and process isolation. 
+        During this lab I examined paging, address translation, page tables and virtual memory systems.
+    </p>
+</section>
+
+<section>
+    <h2>Paging</h2>
+
+    <p>
+        Paging is a memory management technique that divides memory into fixed-size pages and frames. 
+        Virtual memory is divided into pages while physical memory is divided into frames of equal size.
+    </p>
+
+    <p>
+        During the exercises I calculated page numbers, offsets and frame mappings using different memory sizes and address values.
+    </p>
+
+    <p>
+        Paging improves memory management because processes do not need to occupy continuous blocks of memory.
+    </p>
+
+</section>
+
+<section>
+    <h2>Address Translation</h2>
+
+    <p>
+        The MMU translates virtual addresses into physical addresses using page tables. 
+        This process allows programs to use virtual memory without directly accessing physical memory locations.
+    </p>
+
+    <p>
+        In the exercises I worked with binary and hexadecimal address conversions and calculated how addresses are translated between memory systems.
+    </p>
+
+    <p>
+        Address translation is important because it allows operating systems to safely manage memory between multiple processes.
+    </p>
+
+</section>
+
+<section>
+    <h2>Virtual Memory</h2>
+
+    <p>
+        Virtual memory allows operating systems to use secondary storage as additional memory space when physical RAM becomes full.
+    </p>
+
+    <p>
+        During the lab I explored how virtual memory improves multitasking and allows large programs to run efficiently.
+    </p>
+
+    <p>
+        I also learned how page faults occur when a required page is not currently loaded into physical memory.
+    </p>
+
+</section>
+
+<section>
+    <h2>Memory Management Unit (MMU)</h2>
+
+    <p>
+        The Memory Management Unit is responsible for converting virtual addresses into physical addresses during program execution.
+    </p>
+
+    <p>
+        The MMU works closely with page tables and the operating system to ensure that memory is allocated correctly and securely.
+    </p>
+
+    <p>
+        Understanding the MMU is important because it forms the foundation of modern operating system memory management.
+    </p>
+
+</section>
+
+<section>
+    <h2>Reflection</h2>
+
+    <p>
+        This lab improved my understanding of memory management techniques and virtual memory systems used in operating systems.
+    </p>
+
+    <p>
+        I also improved my understanding of paging, address translation and how the MMU controls memory access between processes.
+    </p>
+</section>
+
+</main>
+<footer>
+    <p>Ahmed Hussien Portfolio</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
